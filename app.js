@@ -6,8 +6,7 @@ async function getTotalGoals(team, year) {
 	const response= await fetch(url+"year="+year+"&team1="+team+"&page=1");
 	const data=await response.json();
 
-
-	console.log(data);
+	console.log(data.data);
 }
 
 getTotalGoals('Barcelona', 2011);
